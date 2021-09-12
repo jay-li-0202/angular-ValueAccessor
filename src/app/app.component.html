@@ -1,0 +1,13 @@
+<form [formGroup]="formGroup">
+
+  First Name
+  <resettable-input [formControlName]="'firstName'"></resettable-input>
+
+  Last Name
+  <resettable-input [formControlName]="'lastName'"></resettable-input>
+
+</form>
+
+<p>Form Value</p>
+<code>{{formGroup.value | json}}</code>
+
